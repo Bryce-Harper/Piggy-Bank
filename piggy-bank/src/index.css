@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #fff0f8;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input, select, button {
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --pink: #ec4899;
+  --pink-light: #f472b6;
+  --pink-pale: #fce7f3;
+  --pink-bg: #fff0f8;
+  --green: #4ade80;
+  --green-dark: #166534;
+  --red: #f87171;
+  --red-dark: #991b1b;
+}
